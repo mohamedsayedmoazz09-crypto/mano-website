@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>كتاب البرمجة 50 صفحة - 20 جنيه</title>
+<style>
+body{margin:0;font-family:Tahoma,Arial;background:#0a0a0a;color:#fff}
+.paybox{max-width:500px;margin:20px auto;background:#1e1e1e;padding:25px;border-radius:20px;border:2px solid #00ff88;text-align:center}
+.num{background:#000;padding:14px;border-radius:12px;font-size:26px;border:2px dashed #00ff88;margin:15px;color:#00ff88;font-weight:bold}
+button{padding:15px;width:96%;background:#00ff88;color:#000;border:none;border-radius:12px;font-size:20px;font-weight:bold}
+input{padding:14px;width:92%;border-radius:10px;border:none;text-align:center;font-size:18px;margin:10px 0}
+#book{display:none;background:#fff;color:#222;max-width:850px;margin:auto;padding:25px;line-height:2.3}
+.lesson{background:#f9f9f9;margin:15px 0;padding:20px;border-radius:12px;border-right:4px solid #00ff88}
+</style>
+</head>
+<body>
+<div class="paybox" id="paybox">
+<h1>📚 كتاب البرمجة الشامل</h1>
+<p>50 صفحة من الصفر للاحتراف</p>
+<h2 style="color:#00ff88;border:none;text-align:center">السعر: 20 جنيه فقط 🔥</h2>
+<p>حول فودافون كاش على:</p>
+<div class="num">01104710667</div>
+<p>ابعت سكرين واتساب على نفس الرقم وخد الكود</p>
+<hr>
+<input id="codeInput" placeholder="اكتب كود الفتح">
+<button onclick="unlock()">افتح الكتاب 📖</button>
+<p id="err" style="color:red"></p>
+</div>
+<div id="book">
+<h1 style="text-align:center;color:#00aa66">📚 مبروك! الكتاب اتفتح</h1>
+<p>هنا محتوى الـ 50 صفحة - استخدم الكود الطويل اللي بعتتهولك قبل كده بنفس الرقم بس غير السعر</p>
+</div>
+<script>
+function unlock(){
+if(document.getElementById('codeInput').value.trim()=='MANO50'){
+document.getElementById('paybox').style.display='none';
+document.getElementById('book').style.display='block';
+}else{document.getElementById('err').innerText='❌ الكود غلط';}
+}
+</script>
+</body>
+</html>
